@@ -1,14 +1,18 @@
-import string as s
-
 print("Введите число от 0 до 99")
 
+dig = "0123456789"
 num = input()
 res = ""
 
-if (len(num) <= 0 or len(num) > 2) or (num[0] not in s.digits) or (len(num) == 2 and num[1] not in s.digits):
+# длинна строки должна быть не меньше 0 или не больше 2 / строка либо ее индексы должны входить в строку "dig"
+
+if (len(num) <= 0 or len(num) > 2) or (num[0] not in dig) or (len(num) == 2 and num[1] not in dig):
     print("Вы должны ввести число от 0 до 99")
+    
+# если введенная пользователем строка проходит проверку, то выполняется основная часть программы:  
+    
 else:
-    if num[-1] == "0" and len(num) == 1:
+    if num[-1] == "0":
         res = "ноль"
     if num[-1] == "1":
         res = "один"
