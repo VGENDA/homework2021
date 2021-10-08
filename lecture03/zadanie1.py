@@ -9,7 +9,6 @@ def prov(x):
 
 
 a = []
-
 n = input("Введите число:  ")
 prov(n)
 
