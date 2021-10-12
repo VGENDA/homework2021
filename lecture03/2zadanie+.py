@@ -1,10 +1,12 @@
-N = int(input())
+N = input()
 
 try:
     s = int(N)
 except:
     print("Введите число")
     exit()
+
+N = int(N)
 
 numbers = []
 flags = []
