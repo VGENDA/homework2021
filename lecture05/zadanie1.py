@@ -7,7 +7,6 @@ a = []
 for line in file:
     a.append(int(line))
 
-print(a)
 
 sum = 0
 while sum != 2020:
@@ -17,8 +16,11 @@ while sum != 2020:
     sum = s1 + s2 + s3
     rez = s1 * s2 * s3
 
+
 print(s1, '+', s2, '+', s3, '=', sum)
 print(s1, '*', s2, '*', s3, '=', rez)
+
+file.close()
 
 f = open('output1.txt', 'w')
 f.write(str(rez))
